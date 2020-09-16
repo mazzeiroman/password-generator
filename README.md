@@ -14,9 +14,9 @@ README.md
 ## Link to the deployed website
 https://mazzeiroman.github.io/password-generator/
 
-![](Images/First-look.PNG)
-![](Images/First-prompt.PNG)
-![](Images/generated-password.PNG)
+![](Images/First-look.JPG)
+![](Images/First-prompt.JPG)
+![](Images/generated-password.JPG)
 
 ## Credits
 
