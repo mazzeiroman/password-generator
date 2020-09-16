@@ -1,24 +1,3 @@
-//  // assigning variables to propmts
-//  var passwordLength = prompt("Choose a number between 8 and 128 characters for your password");
-
-//  while (passwordLength < 8 || passwordLength > 128 ) {
-//    var passwordLength = prompt("Choose a number between 8 and 128 characters for your password");
-//  }
- 
-//  var numPassword = confirm("Password with numbers?");
-//  var capPassword = confirm("Capital letters in your password?");
-//  var lowerPassword = confirm("Password with lowercase letters?");
-//  var symPassword = confirm("Password with symbols?");
-
-   // set pasword length/complexity
-  //  var complexity = parseInt(passwordLength);
-  //  var hasNumber = (numPassword === true);
-  //  var hasCap = (capPassword === true);
-  //  var hasLower = (lowerPassword === true);
-  //  var hasSymbol = (symPassword === true);
-
-  //  console.log(hasNumber, hasCap, hasLower, hasSymbol);
-
 // TRYING TO PUT ALL OF MY RANDOM VALUES INTO AN OBJECT
 const randomFunctions = {
   number: randomNumber,
@@ -48,6 +27,12 @@ function writePassword() {
  var lowerPassword = confirm("Password with lowercase letters?");
  var symPassword = confirm("Password with symbols?");
 
+ if( !numPassword && !capPassword && !lowerPassword && !symPassword) {
+  var numPassword = confirm("Password with numbers?");
+  var capPassword = confirm("Capital letters in your password?");
+  var lowerPassword = confirm("Password with lowercase letters?");
+  var symPassword = confirm("Password with symbols?");
+ };
   
   var password = generatePassword(numPassword, capPassword, lowerPassword, symPassword, passwordLength);
   var passwordText = document.querySelector("#password");
